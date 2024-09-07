@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blossom Bouquets</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Blossom Bouquets</h1>
+    </header>
+
+    <section>
+        <p>Enter your name to receive a personalized greeting:</p>
+        <input type="text" id="nameInput" placeholder="Your name...">
+        <button onclick="displayGreeting()">Submit</button>
+        <p id="greeting"></p>
+    </section>
+
+    <footer>
+        <h2>Feedback Form</h2>
+        <form id="feedbackForm">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName"><br>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName"><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br>
+
+            <label for="feedback">Your Feedback:</label><br>
+            <textarea id="feedback" name="feedback"></textarea><br>
+
+            <button type="button" onclick="submitFeedback()">Submit</button>
+            <button type="reset">Cancel</button>
+        </form>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
